@@ -1,2 +1,2 @@
 # data-structure
-Codes relatede to data structure discipline.
+Codes relatede to data structure discipline, in c.
