@@ -25,16 +25,26 @@ void main(){
 
     }
 
-    printf("***************************************************************************\n");
+    printf("\n***************************************************************************\n");
 
     for (i = 0; i < QTD; i++){
         printf("\n Frequencia %d: %f",i,frequenciaCardiaca[i]);
+    }
+
+    printf("\n***************************************************************************\n");
+
+    for (i = 0; i < QTD; i++){
         printf("\n Temperatura %d: %f",i,temperaturaCorporal[i]);
+    }
+
+    printf("\n***************************************************************************\n");
+
+    for (i = 0; i < QTD; i++){
         printf("\n Elevação %d: %f",i,elevacaoTerreno[i]);
     }
 
-    printf("***************************************************************************\n");
-pe-7s-way
+    printf("\n***************************************************************************\n");
+
     diferenca = elevacaoTerreno[QTD - 1] - elevacaoTerreno[0];
 
     printf("\n Maior frequencia cardiaca: %f", maiorFrequencia);
