@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/1710027/Desktop/data-structure/classes/02102020/activite-open/main.c
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/1710027/Desktop/data-structure/classes/02102020/activite-struct&&function/main.c
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/1710027/Desktop/data-structure/classes/02102020/activite3/main.c
+stdio.h
+-
+stdlib.h
+-
+
