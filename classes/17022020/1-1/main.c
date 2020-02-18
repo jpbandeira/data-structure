@@ -16,7 +16,7 @@ typedef struct placar{
 typedef struct jogoDeFutebol{
     char timeLadoDireito[30];
     char timeLadoEsquerdo[30];
-    TPPlacar;
+    TPPlacar *placar;
 }TPJogoDeFutebol;
 
 int main(){
@@ -24,19 +24,30 @@ int main(){
     TPSmartphone *ponteiroSmartphone;
     ponteiroSmartphone = (TPSmartphone *) malloc(sizeof(TPSmartphone));
 
-    TPPlacar *ponteiroPlacar;
-    ponteiroPlacar = (TPPlacar *) malloc(sizeof(TPPlacar));
-
     TPJogoDeFutebol *ponteiroJogo;
     ponteiroJogo = (TPJogoDeFutebol *) malloc(sizeof(TPJogoDeFutebol));
 
-    printf("\nDigite o modelo: ");
+    ponteiroJogo->placar = (TPPlacar *) malloc(sizeof(TPPlacar));
+
+    printf("Digite o modelo: ");
     gets(ponteiroSmartphone->nomeModelo);
-    printf("\nDigite a capacidade de memoria: ");
+    printf("Digite a capacidade de memoria: ");
     scanf("%f", &ponteiroSmartphone->memoria);
-    printf("\nDigite a largura: ");
+    printf("Digite a largura: ");
     scanf("%f", &ponteiroSmartphone->largura);
-    printf("\nDigite a altura: ");
+    printf("Digite a altura: ");
     scanf("%f", &ponteiroSmartphone->altura);
 
+    fflush(stdin);
+
+    printf("Time A: ");
+    gets(ponteiroJogo->timeLadoDireito);
+    printf("Time B: ");
+    gets(ponteiroJogo->timeLadoEsquerdo);
+    printf("Placar Time A: ");
+    scanf("%i", &ponteiroJogo->placar->placarTimeLadoDireito);
+    printf("Placar Time B: ");
+    scanf("%i", &ponteiroJogo->placar->placarTimeLadoEsquerdo);
+
+    printf("%i", ponteiroJogo->placar->placarTimeLadoDireito);
 }
