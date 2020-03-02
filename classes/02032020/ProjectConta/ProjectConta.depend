@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1583190031 source:c:\users\1710027\desktop\data-structure\classes\02032020\projectconta\conta.c
+	<stdio.h>
+	<stdlib.h>
+	"conta.h"
+
+1583188234 c:\users\1710027\desktop\data-structure\classes\02032020\projectconta\conta.h
+
+1583190010 source:c:\users\1710027\desktop\data-structure\classes\02032020\projectconta\main.c
+	<stdio.h>
+	<stdlib.h>
+	"conta.h"
+
