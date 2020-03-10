@@ -4,6 +4,12 @@
 
 int main(){
     TPilha *pilha = criar(10);
-    printf("%i", topo(pilha));
+    empilhar(pilha, 4);
+    empilhar(pilha, 5);
+    empilhar(pilha, 6);
+    mostrar(pilha);
+    inverterPosicoes(pilha);
+    printf("\n");
+    mostrar(pilha);
     return 0;
 }

@@ -13,30 +13,38 @@ TPilha *criar(int valor){
     pilha->quantidade = valor;
     pilha->topo = -1;
     return pilha;
-};
+}
 void empilhar(TPilha *pilha, int valor){
     if(pilha->topo < pilha->quantidade - 1){
         pilha->topo = pilha->topo + 1;
         pilha->vetor[pilha->topo] = valor;
     }
-};
+}
 int desempilhar(TPilha *pilha){
     if(pilha->topo > - 1){
         pilha->topo = pilha->topo - 1;
         return pilha->vetor[pilha->topo + 1];
     }
-};
-int tamanho(TPilha *pilha){
-    return pilha->quantidade;
-};
-int topo(TPilha *pilha){
-    return pilha->vetor[pilha->topo];
-};
-
+}
 int tamanho(TPilha *pilha){
     return pilha->quantidade;
 }
+int topo(TPilha *pilha){
+    return pilha->vetor[pilha->topo];
+}
 
 void inverterPosicoes(TPilha *pilha){
-    TPilha *pilha = (TPilha *) malloc(sizeof(TPilha));
+    TPilha *pilhaAuxiliar = criar(10);
+    int i;
+    for(i = 0; i <= pilha->topo; i++){
+        empilhar(pilhaAuxiliar,desempilhar(pilha));
+        empilhar(pilha, desempilhar(pilhaAuxiliar));
+    }
+}
+
+void mostrar(TPilha *pilha){
+    int i;
+    for(i = 0; i <= pilha->topo; i++){
+        printf("%i", pilha->vetor[i]);
+    }
 }
