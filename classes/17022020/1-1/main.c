@@ -48,6 +48,4 @@ int main(){
     scanf("%i", &ponteiroJogo->placar->placarTimeLadoDireito);
     printf("Placar Time B: ");
     scanf("%i", &ponteiroJogo->placar->placarTimeLadoEsquerdo);
-
-    printf("%i", ponteiroJogo->placar->placarTimeLadoDireito);
 }

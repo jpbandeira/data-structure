@@ -8,7 +8,7 @@ struct Pilha{
 };
 
 TPilha *criar(int valor){
-    TPilha *pilha  = (TPilha *) malloc(TPilha);
+    TPilha *pilha  = (TPilha *) malloc(sizeof(TPilha));
     pilha->vetor = malloc(sizeof(int)*valor);
     pilha->quantidade = valor;
     pilha->topo = -1;
@@ -27,8 +27,16 @@ int desempilhar(TPilha *pilha){
     }
 };
 int tamanho(TPilha *pilha){
-    return pilja->quantidade;
+    return pilha->quantidade;
 };
 int topo(TPilha *pilha){
     return pilha->vetor[pilha->topo];
 };
+
+int tamanho(TPilha *pilha){
+    return pilha->quantidade;
+}
+
+void inverterPosicoes(TPilha *pilha){
+    TPilha *pilha = (TPilha *) malloc(sizeof(TPilha));
+}

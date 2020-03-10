@@ -1,5 +1,13 @@
 # depslib dependency file v1.0
-1446667744 source:c:\users\1710027\desktop\data-structure\classes\02032020\nivelamentopilha\main.c
+1583794550 source:c:\users\1710027\desktop\data-structure\classes\02032020\nivelamentopilha\main.c
 	<stdio.h>
 	<stdlib.h>
+	"pilha.h"
+
+1583788434 c:\users\1710027\desktop\data-structure\classes\02032020\nivelamentopilha\pilha.h
+
+1583794458 source:c:\users\1710027\desktop\data-structure\classes\02032020\nivelamentopilha\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
 
