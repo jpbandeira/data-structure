@@ -34,14 +34,14 @@ int topo(TPilha *pilha){
 }
 
 void inverterPosicoes(TPilha *pilha){
-    TPilha *pilhaAuxiliar = criar(10);
-    int i,j;
-    for(i = 0; i <= pilha->topo; i++){
+    TPilha *pilhaAuxiliar = criar(pilha->quantidade);
+    int i,j, index;
+    for(i = 0; i <= pilha->quantidade; i++){
         empilhar(pilhaAuxiliar,desempilhar(pilha));
     }
 
-    for(j = i; j <= pilhaAuxiliar->topo; j--){
-        empilhar(pilha,desempilhar(pilhaAuxiliar));
+    for(j = 0; j <= pilhaAuxiliar->quantidade; j++){
+        empilhar(pilha,pilhaAuxiliar->vetor[j]);
     }
 }
 
@@ -50,4 +50,11 @@ void mostrar(TPilha *pilha){
     for(i = 0; i <= pilha->topo; i++){
         printf("%i", pilha->vetor[i]);
     }
+}
+
+int estaVazia(TPilha *pilha){
+    if(pilha->topo == -1){
+        return 0;
+    }
+    return 1;
 }
