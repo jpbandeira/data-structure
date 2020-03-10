@@ -35,10 +35,13 @@ int topo(TPilha *pilha){
 
 void inverterPosicoes(TPilha *pilha){
     TPilha *pilhaAuxiliar = criar(10);
-    int i;
+    int i,j;
     for(i = 0; i <= pilha->topo; i++){
         empilhar(pilhaAuxiliar,desempilhar(pilha));
-        empilhar(pilha, desempilhar(pilhaAuxiliar));
+    }
+
+    for(j = i; j <= pilhaAuxiliar->topo; j--){
+        empilhar(pilha,desempilhar(pilhaAuxiliar));
     }
 }
 
