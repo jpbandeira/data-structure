@@ -7,7 +7,9 @@ void empilhar(TPilha *pilha, int valor);
 int desempilhar(TPilha *pilha);
 int tamanho(TPilha *pilha);
 int topo(TPilha *pilha);
-int pilhaVazia(TPilha *pilha);
+int estaVazia(TPilha *pilha);
 void inverterPosicoes(TPilha *pilha);
+void mostrar(TPilha *pilha);
+int removerValor(TPilha *pilha, int valor);
 
 #endif
