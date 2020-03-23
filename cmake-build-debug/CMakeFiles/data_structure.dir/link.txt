@@ -1,3 +1,0 @@
-"C:\Users\1710027\AppData\Local\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\data_structure.dir/objects.a
-C:\MinGW32\bin\ar.exe cr CMakeFiles\data_structure.dir/objects.a @CMakeFiles\data_structure.dir\objects1.rsp
-C:\MinGW32\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\data_structure.dir/objects.a -Wl,--no-whole-archive  -o data_structure.exe -Wl,--out-implib,libdata_structure.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\data_structure.dir\linklibs.rsp
