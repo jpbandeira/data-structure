@@ -1,0 +1,5 @@
+﻿  main.c
+  prioridade.c
+  Gerando Código...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo indefinido _main referenciado na função "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+E:\Projetos\data-structure\classes\03 - Filas\nivelamento-fila-prioridade\Debug\nivelamento-fila-prioridade.exe : fatal error LNK1120: 1 externo não resolvidos
