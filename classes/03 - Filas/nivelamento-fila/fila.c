@@ -66,6 +66,12 @@ int inicio(TFila* fila) {
 	}
 }
 
+int final(TFila* fila) {
+	if (fila->final > -1) {
+		return fila->final;
+	}
+}
+
 int inicioRetornarValorInicio(TFila* fila) {
 	if (fila->inicio > -1) {
 		return fila->vetor[inicio(fila)];

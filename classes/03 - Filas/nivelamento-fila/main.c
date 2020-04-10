@@ -18,21 +18,24 @@ void exibirValores(TFila* fila) {
 void removerValor(TFila* fila, int input) {
 	TFila* auxiliar = criar();
 	int i, j;
-	int tamanhoDaFila = tamanho(fila);
-	for (i = 0; i < tamanhoDaFila; i++){
+	for (i = 0; i < tamanho(fila); i++){
 		if (inicioRetornarValorInicio(fila) == input) {
 			desenfileirar(fila);
 		}
 			enfileirar(auxiliar, desenfileirar(fila));
 	}
 
-	for (j = 0; j < tamanhoDaFila; j++) {
+	for (j = 0; j < tamanho(fila); j++) {
 		enfileirar(fila, desenfileirar(auxiliar));
 	}
 }
 
 void inverterValor(TFila* fila) {
 	TFila* auxiliar = criar();
+
+	for (j = 0; j < tamanho(fila); j++) {
+		
+	}
 }
 
 int main(int argc, char*argv[]) {
@@ -46,12 +49,12 @@ int main(int argc, char*argv[]) {
 
 	exibir(fila);
 
+	removerValor(fila, 2);
+	exibir(fila);
 	removerValor(fila, 3);
 	exibir(fila);
 	removerValor(fila, 4);
 	exibir(fila);
 	removerValor(fila, 5);
 	exibir(fila);
-
-
 }
