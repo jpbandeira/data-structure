@@ -2,23 +2,36 @@
 #include <stdlib.h>
 #include "cabecalho.h"
 
-struct JogoDeFutebol {
-    char timeLadoDireito[30];
-    char timeLadoEsquerdo[30];
-    int placarTimeLadoEsquerdo;
-    int placarTimeLadoDireito;
+struct Jogo {
+	char team1[30];
+	char team2[30];
+	int placarTime1;
+	int placarTime2;
 };
 
-
-TJogoDeFutebol *criar() {
-    TJogoDeFutebol *jogoDeFutebol = (TJogoDeFutebol*)malloc(sizeof(TJogoDeFutebol));
-    jogoDeFutebol->placarTimeLadoDireito = 0;
-    jogoDeFutebol->placarTimeLadoEsquerdo = 0;
-
-    return jogoDeFutebol;
+TJogo* criar(char time1[30], char time2[30], int placarTime1, int placarTime2){
+	TJogo *s = (TJogo *)malloc(sizeof(TJogo));
+	s -> time1 = time1;
+	s -> time2 = time2;
+	s -> scoreboard.placarTime1 = placarTime1;
+	s -> scoreboard.placarTime2 = placarTime2;
 }
 
-int vencedor(TJogoDeFutebol *jogo){
-    
-    return 0;
+TJogo* vencedor(TJogo *jogo){
+	if(jogo -> jogo.placarTime1 > jogo -> jogo.placarTime2){
+		printf("Vencedor: %s\n", jogo -> placarTime1);
+	}
+	else if(jogo -> jogo.placarTime2 > jogo -> jogo.placarTime1){
+		printf("Vencedor: %s\n", jogo -> placarTime2);
+	}
+	else
+		printf("Empate...!\n");
+}
+
+int * goleada(TJogo *jogo){
+	if(jogo -> jogo.placarTime1 - jogo -> jogo.placarTime2 > 3 || 
+	   jogo -> jogo.placarTime2 - jogo -> jogo.placarTime1 > 3)
+	   return 1;
+	else
+		return 0;
 }
