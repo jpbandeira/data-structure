@@ -17,7 +17,6 @@ TConta *criar(float saldoInicial){
 void depositar(TConta *conta, float deposito){
     if(conta->valorDeEmprestimo > 0){
         conta->valorDeEmprestimo -= deposito;
-        conta->saldo -= deposito;
     }else{
         conta->saldo += deposito;
     }

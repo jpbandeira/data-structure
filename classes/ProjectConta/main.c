@@ -22,13 +22,13 @@ int main()
     printf("\n%i", i);
     i++;
 
-    sacar(contaJP, 600);
+    depositar(contaJP, 100);
     informar(contaJP);
 
     printf("\n%i", i);
     i++;
 
-    sacar(contaJP, 100);
+    depositar(contaJP, 100);
     informar(contaJP);
 
     return 0;
