@@ -7,11 +7,14 @@ int main(int argc, char* argv[]) {
 	inserir(lista, 2);
 	inserir(lista, 3);
 	inserir(lista, 4);
+	inserir(lista, 5);
+	inserir(lista, 6);
+	
 	exibe(lista);
 
-	inserirInicio(lista, 23);
+	inverter(lista);
 	exibe(lista);
 
-	printf("\n%i", buscar(lista, 3));
+	//printf("\n%i", tamanho(lista));
 	return 0;
 }

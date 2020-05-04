@@ -73,6 +73,18 @@ void removerTodos(TLista* lista, int valor) {
 	}
 }
 
+void removerNoInicio(TLista* lista) {
+	int index, quantidade = tamanho(lista);
+
+	if (tamanho(lista) == 0) return;
+
+	for (index = 1; index < quantidade; index++) {
+		lista->vetor[index - 1] = lista->vetor[index];
+	}
+
+	lista->quantidade--;
+}
+
 int buscar(TLista* lista, int valor) {
 	int quantidadeElementos = lista->quantidade, i;
 
@@ -95,4 +107,34 @@ void exibe(TLista* lista) {
 	}
 
 	printf("\n");
+}
+
+void inverter(TLista* lista) {
+	int index, n, quantidadeElementos = tamanho(lista);
+	int posicaoInicio = 0;
+
+	if (lista->quantidade == TAM) return;
+
+	for (index = 0; index < quantidadeElementos/2; index++) {			
+		posicaoInicio = lista->vetor[index];
+
+		lista->vetor[index] = lista->vetor[quantidadeElementos - index - 1];
+		lista->vetor[quantidadeElementos - index - 1] = posicaoInicio;
+		
+	}
+}
+
+int comparar(TLista* lista, TLista* lista2) {
+	int i, valorAtual, valorLista2, quantidadeLista = tamanho(lista);
+	int contador = 0;
+
+	for (i = 0; i < quantidadeLista; i++) {
+		valorAtual = lista->vetor[i];
+		valorLista2 = buscar(lista2, valorAtual);
+		if (valorLista2 != -1){
+			contador++;
+		}		
+	}
+
+	return contador;
 }
