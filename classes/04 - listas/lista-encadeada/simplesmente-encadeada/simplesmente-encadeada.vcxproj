@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{787C4340-FDFB-4C8D-8BE8-8B5D9B02BDBE}</ProjectGuid>
+    <ProjectGuid>{F931A222-D285-464B-A2B2-A90DAAE90866}</ProjectGuid>
     <RootNamespace>simplesmenteencadeada</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -138,11 +138,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\simplesmente-encadeadaasd\lista.c" />
-    <ClCompile Include="..\simplesmente-encadeadaasd\main.c" />
+    <ClInclude Include="simples-encadeada.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\simplesmente-encadeadaasd\lista.h" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="simples-encadeada.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
