@@ -12,8 +12,13 @@ int main(int argc, int argv[]) {
 
 	exibir(lista);
 
-	removerNoInicio(lista);
+	removerNaPosicao(lista, 3);
 	exibir(lista);
 
-	printf("%i", tamanho(lista));
+	removerNaPosicao(lista, 1);
+	exibir(lista);
+
+	free(lista);
+
+	//printf("%i", tamanho(lista));
 }

@@ -41,6 +41,9 @@ void inserirInicio(TLista* lista, int valor) {
 	lista->quantidade++;
 }
 
+// 1 2 4 5
+// 0 1 2 3 4 5
+
 int remover(TLista* lista, int valor) {
 	int posicaoValorEncontrado = buscar(lista, valor), index;
 	int quantidade = tamanho(lista);
@@ -137,4 +140,41 @@ int comparar(TLista* lista, TLista* lista2) {
 	}
 
 	return contador;
+}
+
+void inserirNaPosicao(TLista* lista, int valor, int posicao) {
+	int index, quantidadeElementos = tamanho(lista);
+
+	//Verificação para lista cheia e se a posicao passada é maior ou igual a quantidade + 1, não deixando ficar valor duplicado
+	// no vetor ou lixo;
+	if (lista->quantidade == TAM || posicao >= lista->quantidade+1) return;
+
+	for (index = quantidadeElementos - 1; index >= 0; index--) {		
+		lista->vetor[index + 1] = lista->vetor[index];
+		
+		//Permite colocar valor no meio do vetor ou uma posição a frente da ultima
+		if (index == posicao || index + 1 == posicao) {
+			lista->vetor[posicao] = valor;
+			lista->quantidade++;
+			return;
+		}		
+	}	
+}
+
+void removerNaPosicao(TLista* lista, int posicao) {
+	int index, quantidadeElementos = tamanho(lista);
+
+	if (lista->quantidade == TAM) return;
+
+	//A posição precisa está dentro do limite dos elementos da lista;
+	if (posicao < quantidadeElementos) {
+		for (index = posicao + 1; index < quantidadeElementos; index++) {
+			lista->vetor[index - 1] = lista->vetor[index];
+		}
+
+		lista->quantidade--;
+	}
+	else{
+		return;
+	}
 }

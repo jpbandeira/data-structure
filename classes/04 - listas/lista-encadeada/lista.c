@@ -102,3 +102,42 @@ TListaSimples* removerNoInicio(TListaSimples* lista) {
 	lista->proximo = valorARemover->proximo;
 	return valorARemover;
 }
+
+void inserirNaPosicao(TListaSimples* lista, int valor, int posicao) {
+	TListaSimples* listaAuxiliar = lista;
+	int contador = 0;
+
+	if (lista == NULL) return;
+
+	while (contador < posicao) {
+		listaAuxiliar = listaAuxiliar->proximo;
+		contador++;		
+	}
+
+	TListaSimples* listaNova = criar(valor);
+	
+	listaNova->proximo = listaAuxiliar->proximo;
+	listaAuxiliar->proximo = listaNova;
+	
+}
+
+void removerNaPosicao(TListaSimples* lista, int posicao) {
+	TListaSimples* listaAuxiliar = lista;
+	int contador = 0;
+
+	if (lista == NULL) return;
+
+	while (contador < posicao) {
+		listaAuxiliar = listaAuxiliar->proximo;		
+		contador++;
+	}
+
+	//Verificando se o proximo do proximo do elemento presente é null e igualando o proximo do elemento presente para null,
+	//onde nesse caso serve para quando quiser remover o ultimo elemento da lista. Se não for, passa o proximo do elemento presente
+	//para ser o proximo do proximo, para quando a posição passada não for a ultima da lista.
+	if (listaAuxiliar->proximo->proximo == NULL) {		
+		listaAuxiliar->proximo = NULL;
+	}else{
+		listaAuxiliar->proximo = listaAuxiliar->proximo->proximo;
+	}	
+}

@@ -12,3 +12,5 @@ int buscar(TLista* lista, int valor);
 void exibe(TLista* lista);
 void inverter(TLista* lista);
 int comparar(TLista* lista, TLista* lista2);
+void inserirNaPosicao(TLista* lista, int valor, int posicao);
+void removerNaPosicao(TLista* lista, int posicao);

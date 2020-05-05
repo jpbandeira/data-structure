@@ -9,3 +9,5 @@ void exibir(TListaSimples* lista);
 void mostraNo(TListaSimples* lista);
 void inserirNoInicio(TListaSimples* lista, int valor);
 TListaSimples* removerNoInicio(TListaSimples* lista);
+void inserirNaPosicao(TListaSimples* lista, int valor, int posicao);
+void removerNaPosicao(TListaSimples* lista, int posicao);
