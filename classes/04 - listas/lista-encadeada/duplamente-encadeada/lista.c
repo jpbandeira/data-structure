@@ -99,3 +99,25 @@ void exibeTodos(TNo* no) {
 void exibeNo(TNo* no) {
 	if(no != NULL) printf(" [%i] ", no->informacao);
 }
+
+void inserirNaPosicao(TNo* no, int valor, int posicao) {
+	int contador = 0;
+
+	if (no == NULL) return;
+
+	TNo* listaAuxiliar = no;
+
+	while (contador < posicao) {		
+		listaAuxiliar = listaAuxiliar->proximo;
+		contador++;
+	}
+
+	TNo* novoElemento = criar(valor);
+
+	//Realizando tratamento para o casa de quere inserir valor na ultima posição
+	if (listaAuxiliar->proximo != NULL) novoElemento->proximo = listaAuxiliar->proximo;
+	if (listaAuxiliar->proximo != NULL) listaAuxiliar->proximo->anterior = novoElemento;
+
+	listaAuxiliar->proximo = novoElemento;
+	novoElemento->anterior = listaAuxiliar;
+}
