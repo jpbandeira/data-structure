@@ -1,0 +1,4 @@
+﻿  lista.c
+E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\duplamente-encadeada\lista.c(66,29): warning C4047: 'return': 'int' difere em níveis de indireção de 'void *'
+E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\duplamente-encadeada\lista.c(86): warning C4715: 'remover': nem todos os caminhos de controle retornam um valor
+  duplamente-encadeada.vcxproj -> E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\duplamente-encadeada\Debug\duplamente-encadeada.exe
