@@ -8,3 +8,4 @@ TNo* buscar(TNo* no, int valor);
 void exibeTodos(TNo* no);
 void exibeNo(TNo* no);
 void inserirNaPosicao(TNo* no, int valor, int posicao);
+TNo* removerNaPosicao(TNo* no, int posicao);

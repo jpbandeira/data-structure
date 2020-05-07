@@ -11,13 +11,9 @@ int main(int argc, int argv[]) {
 	
 	exibeTodos(lista);
 
-	//inserirNaPosicao(lista, 99, 1);
-	//exibeTodos(lista);
-
-	//inserirNaPosicao(lista, 39, 0);
-	//exibeTodos(lista);
-
-	inserirNaPosicao(lista, 39, 3);
+	removerNaPosicao(lista, 3);
 	exibeTodos(lista);
+
+	free(lista);
 
 }

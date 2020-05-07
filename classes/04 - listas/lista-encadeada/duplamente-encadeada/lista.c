@@ -121,3 +121,33 @@ void inserirNaPosicao(TNo* no, int valor, int posicao) {
 	listaAuxiliar->proximo = novoElemento;
 	novoElemento->anterior = listaAuxiliar;
 }
+
+TNo* removerNaPosicao (TNo* no, int posicao){
+	int contador = 0;
+
+	if (no == NULL) return NULL;
+
+	TNo* listaAuxiliar = no;
+
+	while (contador <= posicao) {
+		//Não permite que seja removido um valor na posição após a ultima, evitando que o programa trave.
+		if (listaAuxiliar->proximo == NULL) {			
+			return NULL;
+		}
+
+		listaAuxiliar = listaAuxiliar->proximo;
+		contador++;
+	}
+
+	if (listaAuxiliar->proximo == NULL) {
+		listaAuxiliar->anterior->proximo = NULL;
+		free(listaAuxiliar);
+	}
+	else {
+		listaAuxiliar->anterior->proximo = listaAuxiliar->proximo;
+		listaAuxiliar->proximo->anterior = listaAuxiliar->anterior;
+		free(listaAuxiliar);
+	}
+
+	return NULL;
+}
