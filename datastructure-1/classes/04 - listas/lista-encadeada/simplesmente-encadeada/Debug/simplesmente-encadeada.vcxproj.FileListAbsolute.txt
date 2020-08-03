@@ -1,0 +1,2 @@
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\Debug\simplesmente-encadeada.exe
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\Debug\simplesmente-encadeada.pdb

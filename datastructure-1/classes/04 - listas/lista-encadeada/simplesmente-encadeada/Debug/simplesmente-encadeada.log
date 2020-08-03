@@ -1,0 +1,10 @@
+﻿  simples-encadeada.c
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(46,27): warning C4033: 'remover' deve retornar um valor
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(60,27): warning C4033: 'buscar' deve retornar um valor
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(91,32): warning C4098: 'inserirNoInicio': função 'void' retornando um valor
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(148,27): warning C4033: 'removerOrdenadoDecrescente' deve retornar um valor
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(158,24): warning C4047: 'return': 'int' difere em níveis de indireção de 'TListaSimples *'
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(69): warning C4715: 'buscar': nem todos os caminhos de controle retornam um valor
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(55): warning C4716: 'remover': deve retornar um valor
+E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(163): warning C4715: 'removerOrdenadoDecrescente': nem todos os caminhos de controle retornam um valor
+  simplesmente-encadeada.vcxproj -> E:\projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\Debug\simplesmente-encadeada.exe

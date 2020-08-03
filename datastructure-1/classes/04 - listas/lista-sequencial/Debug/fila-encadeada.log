@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: O diretório intermediário (Debug\) contém arquivos compartilhados de outro projeto (fila-encadeada.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  main.c
+E:\projetos\data-structure\classes\04 - listas\lista-sequencial\main.c(15,16): warning C4013: 'removerImpares' indefinido; assumindo extern retornando int
+  fila-encadeada.vcxproj -> E:\projetos\data-structure\classes\04 - listas\lista-sequencial\Debug\lista-sequencial.exe

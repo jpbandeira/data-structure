@@ -1,9 +1,0 @@
-﻿  main.c
-  simples-encadeada.c
-E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(46,27): warning C4033: 'remover' deve retornar um valor
-E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(60,27): warning C4033: 'buscar' deve retornar um valor
-E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(91,32): warning C4098: 'inserirNoInicio': função 'void' retornando um valor
-  Gerando Código...
-E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(55): warning C4716: 'remover': deve retornar um valor
-E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\simples-encadeada.c(69): warning C4715: 'buscar': nem todos os caminhos de controle retornam um valor
-  simplesmente-encadeada.vcxproj -> E:\Projetos\data-structure\classes\04 - listas\lista-encadeada\simplesmente-encadeada\Debug\simplesmente-encadeada.exe
